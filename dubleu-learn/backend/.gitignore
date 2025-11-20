@@ -1,0 +1,11 @@
+# Backend specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+uploads/
+logs/
+*.pem
+config/local.js
