@@ -1,0 +1,350 @@
+.course-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.course-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.course-info h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.course-description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.course-meta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.teacher, .subject, .students {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.subject {
+  text-transform: capitalize;
+}
+
+.enroll-btn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enroll-btn:hover {
+  background: #219a52;
+}
+
+.course-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  color: #666;
+  font-size: 1rem;
+}
+
+.tab.active {
+  color: #3498db;
+  border-bottom-color: #3498db;
+  font-weight: 500;
+}
+
+.tab:hover:not(.active) {
+  color: #2c3e50;
+  background: #f8f9fa;
+}
+
+.course-content {
+  min-height: 400px;
+}
+
+.overview-tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.syllabus, .objectives {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e1e8ed;
+}
+
+.syllabus h3, .objectives h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.objectives ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.objectives li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.objectives li:before {
+  content: "✓";
+  color: #27ae60;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.lessons-tab, .assignments-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.teacher-actions {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px dashed #ddd;
+  text-align: center;
+}
+
+.create-btn {
+  background: #3498db;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.create-btn:hover {
+  background: #2980b9;
+}
+
+.lesson-item, .assignment-item {
+  background: white;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lesson-item:hover, .assignment-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.lesson-item h4, .assignment-item h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.lesson-meta, .assignment-meta {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.assignment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.assignment-type {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.assignment-type.homework {
+  background: #e8f4fd;
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.assignment-type.quiz {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #856404;
+}
+
+.assignment-type.project {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #155724;
+}
+
+.assignment-type.exam {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #721c24;
+}
+
+.assignment-type.discussion {
+  background: #e2e3e5;
+  color: #383d41;
+  border: 1px solid #383d41;
+}
+
+.assignment-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.view-lesson-btn, .view-assignment-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+}
+
+.view-lesson-btn:hover, .view-assignment-btn:hover {
+  background: #2980b9;
+}
+
+.grade-assignment-btn {
+  background: #27ae60;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.grade-assignment-btn:hover {
+  background: #219a52;
+}
+
+.discussion-tab {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e1e8ed;
+}
+
+.discussion-placeholder {
+  text-align: center;
+  color: #666;
+}
+
+.discussion-placeholder h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.no-content {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e1e8ed;
+}
+
+.no-content p {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .course-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .course-info h1 {
+    font-size: 2rem;
+  }
+  
+  .course-meta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .course-tabs {
+    flex-direction: column;
+  }
+  
+  .overview-tab {
+    grid-template-columns: 1fr;
+  }
+  
+  .tab {
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+  
+  .assignment-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .assignment-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .assignment-actions {
+    flex-direction: column;
+  }
+  
+  .view-assignment-btn,
+  .grade-assignment-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
