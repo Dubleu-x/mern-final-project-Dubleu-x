@@ -1,0 +1,264 @@
+.assignment-submissions {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.submissions-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e1e8ed;
+}
+
+.back-btn {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.back-btn:hover {
+  background: #5a6268;
+}
+
+.submissions-header h1 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.assignment-info {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 4px solid #3498db;
+}
+
+.assignment-info p {
+  margin: 0.25rem 0;
+  color: #495057;
+}
+
+.submissions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.submission-item {
+  background: white;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.submission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.submission-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.submission-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.submission-status.submitted {
+  background: #e8f4fd;
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.submission-status.graded {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #155724;
+}
+
+.submission-status.late {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #856404;
+}
+
+.submission-content {
+  margin-bottom: 1.5rem;
+}
+
+.submission-text h4,
+.submission-files h4 {
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+.submission-text p {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 3px solid #dee2e6;
+  white-space: pre-wrap;
+}
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.file-item a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: #e8f4fd;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: background-color 0.3s;
+}
+
+.file-item a:hover {
+  background: #d1ecf1;
+}
+
+.submission-meta {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e1e8ed;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.current-grade {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+}
+
+.grading-form {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 4px;
+  border: 1px dashed #dee2e6;
+}
+
+.grading-form h4 {
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+.grade-inputs {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.input-group input,
+.input-group textarea {
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.input-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-grade-btn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.submit-grade-btn:hover:not(:disabled) {
+  background: #219a52;
+}
+
+.submit-grade-btn:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.no-submissions {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  color: #6c757d;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+.loading {
+  color: #6c757d;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .assignment-submissions {
+    padding: 1rem;
+  }
+  
+  .grade-inputs {
+    grid-template-columns: 1fr;
+  }
+  
+  .submission-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

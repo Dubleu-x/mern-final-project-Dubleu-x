@@ -45,6 +45,16 @@ body {
   font-size: 1.1rem;
   color: #666;
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 2rem; /* Add some space above footer */
+}
 
 /* Responsive design */
 @media (max-width: 768px) {

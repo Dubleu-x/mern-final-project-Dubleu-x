@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'; // ADD THIS IMPORT
 import Dashboard from './pages/Dashboard';
 import Courses from './pages/Courses';
 import CourseDetail from './pages/CourseDetail';
@@ -11,7 +12,8 @@ import Register from './pages/Register';
 import CreateCourse from './pages/CreateCourse';
 import CreateAssignment from './pages/CreateAssignment';
 import CreateLesson from './pages/CreateLesson';
-import api, { testBackendConnection } from './services/api'; // Fixed import
+import AssignmentSubmissions from './pages/AssignmentSubmissions';
+import api, { testBackendConnection } from './services/api';
 import './App.css';
 
 function App() {
@@ -59,8 +61,15 @@ function App() {
                   <CreateAssignment />
                 </ProtectedRoute>
               } />
+              <Route path="/assignments/:id/submissions" element={
+                <ProtectedRoute requiredRole="teacher">
+                  <AssignmentSubmissions />
+                </ProtectedRoute>
+              } />
             </Routes>
           </main>
+          {/* ADD FOOTER HERE */}
+          <Footer />
         </div>
       </Router>
     </AuthProvider>
