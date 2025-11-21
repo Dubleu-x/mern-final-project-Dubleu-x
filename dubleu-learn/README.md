@@ -37,7 +37,9 @@ DubleuLearn is a comprehensive MERN stack e-learning platform designed to facili
 
 ## 🚀 Live Deployment
 
-🎥 **Video Demonstration**: [Watch Demo Video](./vid/dubleu-learn-quide.mp4)
+🎥 **Video Demonstration**: [Watch Demo Video](
+   
+)
 
 🌐 **Live Application**: [https://dubleulearn.vercel.app](https://dubleulearn.vercel.app) *(Replace with your actual deployment URL)*
 
