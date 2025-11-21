@@ -37,12 +37,26 @@ DubleuLearn is a comprehensive MERN stack e-learning platform designed to facili
 
 ## 🚀 Live Deployment
 
-🎥 **Video Demonstration**: [Watch Demo Video](
-   
-)
+## 📹 VideoDemo.
 
-🌐 **Live Application**: [https://dubleulearn.vercel.app](https://dubleulearn.vercel.app) *(Replace with your actual deployment URL)*
+A screencast is worth a thousand words! Here's a video demonstrating the key workflows:
 
+*   **Full Walkthrough (6:42 min):** A complete guide on usage.
+    [Watch on Vimeo](https://vimeo.com/1139339818)
+
+
+### **Production Application**
+🌐 **Main URL**: [https://mern-final-project-dubleu-x-awhi.vercel.app](https://mern-final-project-dubleu-x-awhi.vercel.app)
+
+### **Preview Deployments**
+- **Development Preview**: [https://mern-final-project-dubl-git-8c0ffb-sylvesters-projects-7aa7f8dd.vercel.app](https://mern-final-project-dubl-git-8c0ffb-sylvesters-projects-7aa7f8dd.vercel.app)
+- **Branch Preview**: [https://mern-final-project-dubleu-x-awhi-qudeodioy.vercel.app](https://mern-final-project-dubleu-x-awhi-qudeodioy.vercel.app)
+
+### **Backend API**
+🔧 **API Server**: [https://mern-final-project-dubleu-x-9.onrender.com](https://mern-final-project-dubleu-x-9.onrender.com)
+
+### **API Health Check**
+✅ **Status**: [https://mern-final-project-dubleu-x-9.onrender.com/health](https://mern-final-project-dubleu-x-9.onrender.com/health)
 
 ## 📸 Screenshots...
 
