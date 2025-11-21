@@ -1,3 +1,23 @@
+// Load environment variables FIRST with debugging
+const path = require('path');
+console.log('🔍 Current directory:', __dirname);
+console.log('🔍 Looking for .env file at:', path.join(__dirname, '.env'));
+
+require('dotenv').config({ path: path.join(__dirname, '.env') });
+
+// Debug environment variables immediately
+console.log('🔍 Environment Variables Debug:');
+console.log('NODE_ENV:', process.env.NODE_ENV || 'UNDEFINED');
+console.log('MONGODB_URI exists:', !!process.env.MONGODB_URI);
+console.log('MONGODB_URI length:', process.env.MONGODB_URI?.length || 0);
+console.log('PORT:', process.env.PORT || 'UNDEFINED');
+
+// If MONGODB_URI is not set, use hardcoded Atlas URI for now
+if (!process.env.MONGODB_URI) {
+  console.log('⚠️ MONGODB_URI not found in environment, using hardcoded Atlas URI');
+  process.env.MONGODB_URI = 'mongodb+srv://clvesta321_db_user:Admi8135@clusterdubleu.1cz6wfn.mongodb.net/dubleulearn?retryWrites=true&w=majority';
+}
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -5,10 +25,9 @@ const http = require('http');
 const socketIo = require('socket.io');
 const connectDB = require('./config/database');
 const errorHandler = require('./middleware/errorHandler');
-require('dotenv').config();
 
 console.log('🚀 Starting DubleuLearn Backend Server...');
-console.log('Environment:', process.env.NODE_ENV);
+console.log('Environment:', process.env.NODE_ENV || 'development');
 console.log('MongoDB URI:', process.env.MONGODB_URI ? 'Set' : 'Not set');
 
 // Route imports
@@ -63,7 +82,8 @@ app.get('/health', (req, res) => {
   res.json({ 
     status: 'OK', 
     timestamp: new Date().toISOString(),
-    database: mongoose.connection.readyState === 1 ? 'Connected' : 'Disconnected'
+    database: mongoose.connection.readyState === 1 ? 'Connected' : 'Disconnected',
+    environment: process.env.NODE_ENV || 'development'
   });
 });
 
@@ -100,4 +120,5 @@ server.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
   console.log(`🔗 Health check: http://localhost:${PORT}/health`);
   console.log(`🔗 API Base: http://localhost:${PORT}/api`);
+  console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
 });
