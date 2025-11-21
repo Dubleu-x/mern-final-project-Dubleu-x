@@ -223,8 +223,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Developer
 
 **Sylvester Kamau**
-- GitHub: [@yourusername](https://github.com/Dubleu-x)
-- LinkedIn: [Your LinkedIn](www.linkedin.com/in/sylvester-kamau-b7a714351)
+- GitHub: [@Dubleu](https://github.com/Dubleu-x)
+- LinkedIn: [Sylvester](www.linkedin.com/in/sylvester-kamau-b7a714351)
 - Email: clvesta321@gmail.com
 
 ## 🙏 Acknowledgments
