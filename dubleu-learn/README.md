@@ -45,11 +45,11 @@ DubleuLearn is a comprehensive MERN stack e-learning platform designed to facili
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](./vid/Teacher-Dashboard.jpeg)
+![Dashboard](./img/Teacher-Dashboard.jpeg)
 
 
 ### Dashboard
-![Dashboard](./vid/Student-Dashboard.jpeg)
+![Dashboard](./img/Student-Dashboard.jpeg)
 
 
 
