@@ -232,6 +232,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - React.js community for excellent documentation
 - MongoDB for robust database solutions
 - All contributors and testers
-- PLP Academy for guidance and support
+- PLP Academy for guidance and support.
 
 ---
