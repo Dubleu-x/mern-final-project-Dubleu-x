@@ -70,7 +70,7 @@ A screencast is worth a thousand words! Here's a video demonstrating the key wor
 
 
 
-## ⚙️ Setup Instructions
+## ⚙️ Setup Instructions.
 
 ### Prerequisites
 - Node.js (v14 or higher)
